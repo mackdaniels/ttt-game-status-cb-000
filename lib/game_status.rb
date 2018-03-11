@@ -7,6 +7,9 @@ end
 def won?(board)
   #check if board is empty
   empty = (x & ["X", "O"]).any?
+  if empty != true
+    return false
+  end
 end
 
 
