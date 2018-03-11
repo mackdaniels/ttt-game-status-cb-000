@@ -14,7 +14,7 @@ end
 
 #WON?
 def won?(board)
-  empty?(board)
+  return empty?(board)
   array_count = 0
   while array_count <= 8
     win_index_1 = WIN_COMBINATIONS[array_count][0]
