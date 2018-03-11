@@ -18,8 +18,10 @@ def won?(board)
   board.each do |cell|
     if cell == " "
       next
+    else
+      return false
     end
-    return false
+    
   end
   array_count = 0
   while array_count <= 8
