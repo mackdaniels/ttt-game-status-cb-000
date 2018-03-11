@@ -1,1 +1,3 @@
-puts "hello"
+def check
+  puts "hello"
+end
