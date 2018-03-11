@@ -4,11 +4,11 @@ end
 
 check
 
-BOARD = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
 
 def empty?()
-  BOARD = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-  return (BOARD & ["X", "O"]).any?
+  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+  return (board & ["X", "O"]).any?
 end
 
 empty?
