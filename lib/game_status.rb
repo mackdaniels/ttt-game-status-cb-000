@@ -10,7 +10,7 @@ end
 #WON?
 def won?(board)
   #check if board is empty
-  return (board & ["X", "O"]).any?
+  empty?(board)
 end
 
 
