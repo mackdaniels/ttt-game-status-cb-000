@@ -3,6 +3,10 @@ def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 
+def empty?(board)
+  return board.include? "X" || board.include? "O"
+end
+
 #WON?
 def won?(board)
   array_count = 0
