@@ -3,15 +3,20 @@ def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 
+def draw?(board)
+end
 
+def empty?(board)
+  check = (board & ["X", "O"]).any?
+  if check != true
+    return false
+  end
+end
 
 #WON?
 def won?(board)
   #check if board is empty
-  empty = (board & ["X", "O"]).any?
-  if empty != true
-    return false
-  end
+  empty?(board)
   array_count = 0
   while array_count <= 8
     win_index_1 = WIN_COMBINATIONS[array_count][0]
