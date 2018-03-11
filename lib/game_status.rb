@@ -3,10 +3,6 @@ def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 
-def empty?(board)
-  return
-end
-
 #WON?
 def won?(board)
   #check if board is empty
