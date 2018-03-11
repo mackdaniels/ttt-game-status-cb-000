@@ -4,7 +4,12 @@ def position_taken?(board, index)
 end
 
 def empty?(board)
-  return !board.include? ("X" || "O")
+  board.each do |cell|
+    if cell != " "
+      return false
+    end
+    return true
+  end
 end
 
 #WON?
