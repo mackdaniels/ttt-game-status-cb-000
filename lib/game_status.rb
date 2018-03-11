@@ -16,6 +16,7 @@ def won?(board)
     if position_1 == ("X" || "O") && position_2 == ("X" || "O") && position_3 == ("X" || "O")
       return WIN_COMBINATIONS[array_count]
     end
+  end
 end
 
 
