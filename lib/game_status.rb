@@ -21,7 +21,7 @@ def won?(board)
     else
       return false
     end
-    
+
   end
   array_count = 0
   while array_count <= 8
