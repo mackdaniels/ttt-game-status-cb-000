@@ -9,3 +9,5 @@ BOARD = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 def empty?(BOARD)
   return (BOARD & ["X", "O"]).any?
 end
+
+empty?(BOARD)
