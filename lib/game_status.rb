@@ -4,7 +4,7 @@ def position_taken?(board, index)
 end
 
 def empty?(board)
-  return board.include? "X" || board.include? "O"
+  return !board.include? ("X" || "O") 
 end
 
 #WON?
