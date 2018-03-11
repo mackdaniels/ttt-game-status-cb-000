@@ -11,4 +11,4 @@ def empty?()
   return (BOARD & ["X", "O"]).any?
 end
 
-empty?(BOARD)
+empty?
