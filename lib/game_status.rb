@@ -14,7 +14,13 @@ end
 
 #WON?
 def won?(board)
-  return empty?(board)
+  #check if board is empty
+  board.each do |cell|
+    if cell == " "
+      next
+    end
+    return false
+  end
   array_count = 0
   while array_count <= 8
     win_index_1 = WIN_COMBINATIONS[array_count][0]
