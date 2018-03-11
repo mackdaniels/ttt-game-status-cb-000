@@ -5,6 +5,17 @@ end
 
 #WON?
 def won?(board)
+  array_count = 0
+  while array_count <= 8
+    win_index_1 = win_combination[array_count][0]
+    win_index_2 = win_combination[array_count][1]
+    win_index_3 = win_combination[array_count][3]
+    position_1 = board[win_index_1]
+    position_2 = board[win_index_2]
+    position_3 = board[win_index_3]
+    if position_1 == ("X" || "O") && position_2 == ("X" || "O") && position_3 == ("X" || "O")
+      return WIN_COMBINATIONS[array_count]
+    end
 end
 
 
