@@ -6,7 +6,8 @@ check
 
 BOARD = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
-def empty?(b)
+def empty?()
+  BOARD = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
   return (BOARD & ["X", "O"]).any?
 end
 
