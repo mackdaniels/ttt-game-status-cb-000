@@ -1,3 +1,1 @@
-def test
-  puts true
-end
+puts "hello"
