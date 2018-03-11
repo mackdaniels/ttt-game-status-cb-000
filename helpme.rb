@@ -4,3 +4,5 @@ def test
     return 100
   end
 end
+
+test
