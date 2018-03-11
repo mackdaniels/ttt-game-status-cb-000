@@ -7,9 +7,9 @@ end
 def won?(board)
   array_count = 0
   while array_count <= 8
-    win_index_1 = win_combination[array_count][0]
-    win_index_2 = win_combination[array_count][1]
-    win_index_3 = win_combination[array_count][3]
+    win_index_1 = WIN_COMBINATIONS[array_count][0]
+    win_index_2 = WIN_COMBINATIONS[array_count][1]
+    win_index_3 = WIN_COMBINATIONS[array_count][3]
     position_1 = board[win_index_1]
     position_2 = board[win_index_2]
     position_3 = board[win_index_3]
