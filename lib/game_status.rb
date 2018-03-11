@@ -4,13 +4,13 @@ def position_taken?(board, index)
 end
 
 def empty?(board)
-  return (x & ["X", "O"]).any?
+  return
 end
 
 #WON?
 def won?(board)
   #check if board is empty
-  empty?(board)
+  empty = (x & ["X", "O"]).any?
 end
 
 
