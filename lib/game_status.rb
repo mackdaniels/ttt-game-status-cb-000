@@ -3,25 +3,16 @@ def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 
-def empty?(board)
-  board.each do |cell|
-    if cell != " "
-      return false
-    end
-    return true
-  end
-end
+
 
 #WON?
 def won?(board)
   #check if board is empty
-  board.each do |cell|
-    if cell == " "
-      next
-    else
-      return false
-    end
-
+  if board.include? "X"
+    return false
+  end
+  if board.include? "O"
+    return false
   end
   array_count = 0
   while array_count <= 8
