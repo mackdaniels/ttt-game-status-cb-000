@@ -1,13 +1,7 @@
-def check
-  puts "hello"
-end
-
-check
-
 
 
 def empty?()
-  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+  board = ["X", " ", " ", " ", " ", " ", " ", " ", " "]
   return (board & ["X", "O"]).any?
 end
 
